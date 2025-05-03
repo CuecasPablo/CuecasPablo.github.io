@@ -19,16 +19,20 @@
 <body class="bg-dark text-light">
 
     <!--Clases para alinear el contenido al centro de la pantalla-->
-    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="container d-flex justify-content-center align-items-center min-vh-100 flex-column">
         <!--Formulario-->
-        <form>
-            <div class="mb-3">
+        <form class="mb-4">
+            <div class="mb-3"><!--m=margin. b=bottom. 3 medida de separación(intermedia)-->
                 <label for="entradaNombre" class="form-label">Nombres</label><!--Campo del formulario para escribir-->
                 <input type="text" class="form-control" id="entradaNombre">
             </div>
             <button type="button" class="btn btn-primary" id = "botonGuardar">Guardar</button><!--Botón para guardar el nombre en el array-->
             <button type="button" class="btn btn-danger" id = "botonBorrar">Borrar</button><!--Botón para borrar el nombre del array-->
+            <button type="button" class="btn btn-warning" id = "botonBorrarTodo">Borrar todo</button> <!--Botón para borrar todos los elementos del array-->
         </form>
+
+        <div id="mostrarArray"></div>
+
     </div>
 </body>
 
