@@ -24,12 +24,19 @@
         <form class="mb-4">
             <div class="mb-3"><!--m=margin. b=bottom. 3 medida de separación(intermedia)-->
                 <label for="entradaNombre" class="form-label">Nombres</label><!--Campo del formulario para escribir-->
-                <input type="text" class="form-control" id="entradaNombre">
+                <input type="text" class="form-control" id="entradaNombre" placeholder="Nombre del posible afortunado">
             </div>
+
             <button type="button" class="btn btn-primary" id = "botonGuardar">Guardar</button><!--Botón para guardar el nombre en el array-->
             <button type="button" class="btn btn-danger" id = "botonBorrar">Borrar</button><!--Botón para borrar el nombre del array-->
             <button type="button" class="btn btn-warning" id = "botonBorrarTodo">Borrar todo</button> <!--Botón para borrar todos los elementos del array-->
+            
+            <div class="mt-3 d-grid gap-2 col-12 mx-auto">
+                <button type="button" class="btn btn-success" id = "botonSorteo">¡SORTEO!</button>
+            </div>
         </form>
+
+        <p>Lista de posibles afortunados:</p>
 
         <div class="mt-3">
             <ul id="mostrarArray" class="d-flex flex-wrap gap-2 list-unstyled" ></ul><!--list-unstyled para que no salgan los puntos-->

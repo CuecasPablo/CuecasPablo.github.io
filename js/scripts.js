@@ -5,6 +5,7 @@ let botonGuardar = document.getElementById("botonGuardar"); //Declara la variabl
 let botonBorrar = document.getElementById("botonBorrar"); // Declara la variable botonBorrar. Contiene el botón del formulario que elimina nombres del array.
 let botonBorrarTodo = document.getElementById("botonBorrarTodo"); //Declara la variable botonBorrarTodo. Contiene el botón del formulario que borra todo el array.
 let lista = document.getElementById("mostrarArray"); //Declara la variable lista. Contiene el div donde se va a ir mostrando en forma de lista el array.
+let botonSorteo = document.getElementById("botonSorteo"); //Declara la variable botonSorteo. Contiene el botón que selecciona un nombre random.
 
 //#### FUNCIÓN PARA AGREGAR NOMBRES AL ARRAY ####
 function agregarNombre() {
@@ -66,6 +67,7 @@ function mostrarArray() {
         elementoLista.appendChild(texto);//asigna el texto al <li> que ha creado antes.
 
         //Estilo para cada <li>
+        elementoLista.style.fontSize = "30px";
         elementoLista.style.padding = "5px 10px";
         elementoLista.style.backgroundColor = "lavender";
         elementoLista.style.color = "black";
@@ -74,6 +76,22 @@ function mostrarArray() {
         lista.appendChild(elementoLista);//añade el <li> a la <ul> de mostrarArray.
     }
 }
+
+// #### FUNCIÓN PARA ESCOGER UN NOMBRE RANDOM ###
+
+function nombreRandom() {
+    if (nombres.length === 0) { //si el array está vacío.
+        console.log("No has introducido nombres.")//muestra en la consola que el array está vacío.
+        alert("No has introducido nombres.");//muestra un pop-up indicando que el array está vacío.
+    } else { //si el array tiene nombres.
+        let indiceRandom = Math.floor(Math.random() * nombres.length);//genera un numero entre 0 y 0.9^. Lo multiplica por la longitud del array. Lo redondea hacia abajo con Math.floor.
+        let nombreSeleccionado = nombres[indiceRandom];//selecciona el nombre correspondiente al indiceRandom.
+        console.log("¡EL AFORTUNADO ES " + nombreSeleccionado.toUpperCase() + "!");//muestra en consola el nombre seleccionado.
+        alert("¡EL AFORTUNADO ES " + nombreSeleccionado.toUpperCase() + "!");//muestra en un pop-up el nombre seleccionado.
+    }
+}
+
+botonSorteo.addEventListener("click", nombreRandom);//cuando se pulsa el botón botonSorteo hace la función nombreRandom.
 
 
 
