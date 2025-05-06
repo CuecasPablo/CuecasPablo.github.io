@@ -1,0 +1,32 @@
+#logo{
+    width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form{
+    width: 500px;
+    height: 400px;
+    border: 5px solid #c5b1e0;
+    border-radius: 25% 10%;
+    padding: 30px;
+    background-color: #4d3273;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+#botonSorteo:hover{
+    color:black;
+    font-weight: bolder;
+    transform: scale(1.2);
+    background-image: url('../imagenes/fondobotonsorteo.gif');
+}
+
+#tituloPosibles{
+    text-align: center;
+    font-size: large;
+    font-family:Arial, Helvetica, sans-serif
+}

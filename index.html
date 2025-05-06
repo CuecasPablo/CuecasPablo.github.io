@@ -16,14 +16,18 @@
 
 </head>
 <!--Clase en body para poner web modo oscuro-->
-<body class="bg-dark text-light">
+<body class="bg-dark text-light container d-flex justify-content-center align-items-center min-vh-100 flex-column">
+
+    <header class="mb-4">
+        <img src ="imagenes/logo.png" id="logo">
+    </header>
 
     <!--Clases para alinear el contenido al centro de la pantalla-->
-    <div class="container d-flex justify-content-center align-items-center min-vh-100 flex-column">
+    
         <!--Formulario-->
         <form class="mb-4">
             <div class="mb-3"><!--m=margin. b=bottom. 3 medida de separación(intermedia)-->
-                <label for="entradaNombre" class="form-label">Nombres</label><!--Campo del formulario para escribir-->
+                <label for="entradaNombre" class="form-label"></label><!--Campo del formulario para escribir-->
                 <input type="text" class="form-control" id="entradaNombre" placeholder="Nombre del posible afortunado">
             </div>
 
@@ -31,18 +35,18 @@
             <button type="button" class="btn btn-danger" id = "botonBorrar">Borrar</button><!--Botón para borrar el nombre del array-->
             <button type="button" class="btn btn-warning" id = "botonBorrarTodo">Borrar todo</button> <!--Botón para borrar todos los elementos del array-->
             
-            <div class="mt-3 d-grid gap-2 col-12 mx-auto">
+            <div class="mt-3 mx-auto">
                 <button type="button" class="btn btn-success" id = "botonSorteo">¡SORTEO!</button>
             </div>
         </form>
 
-        <p>Lista de posibles afortunados:</p>
+        <h6 id="tituloPosibles">Posibles afortunados:</h6>
 
         <div class="mt-3">
             <ul id="mostrarArray" class="d-flex flex-wrap gap-2 list-unstyled" ></ul><!--list-unstyled para que no salgan los puntos-->
         </div>
 
-    </div>
+    
 
 </body>
 
