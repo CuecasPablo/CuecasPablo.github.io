@@ -69,9 +69,11 @@ function mostrarArray() {
         //Estilo para cada <li>
         elementoLista.style.fontSize = "30px";
         elementoLista.style.padding = "5px 10px";
-        elementoLista.style.backgroundColor = "lavender";
+        elementoLista.style.backgroundImage = "url('imagenes/fondolista.gif')";
         elementoLista.style.color = "black";
         elementoLista.style.borderRadius = "5px";
+        elementoLista.style.color = "white";
+        elementoLista.style.fontWeight = "bolder";
 
         lista.appendChild(elementoLista);//añade el <li> a la <ul> de mostrarArray.
     }
@@ -86,8 +88,8 @@ function nombreRandom() {
     } else { //si el array tiene nombres.
         let indiceRandom = Math.floor(Math.random() * nombres.length);//genera un numero entre 0 y 0.9^. Lo multiplica por la longitud del array. Lo redondea hacia abajo con Math.floor.
         let nombreSeleccionado = nombres[indiceRandom];//selecciona el nombre correspondiente al indiceRandom.
-        console.log("¡EL AFORTUNADO ES " + nombreSeleccionado.toUpperCase() + "!");//muestra en consola el nombre seleccionado.
-        alert("¡EL AFORTUNADO ES " + nombreSeleccionado.toUpperCase() + "!");//muestra en un pop-up el nombre seleccionado.
+        console.log("¡EL/LA AFORTUNAD@ ES " + nombreSeleccionado.toUpperCase() + "!");//muestra en consola el nombre seleccionado.
+        alert("¡EL/LA AFORTUNAD@ ES " + nombreSeleccionado.toUpperCase() + "!");//muestra en un pop-up el nombre seleccionado.
     }
 }
 

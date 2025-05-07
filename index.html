@@ -12,41 +12,46 @@
     <!--Referencia BootStrap para poder usar sus clases-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-
 </head>
-<!--Clase en body para poner web modo oscuro-->
-<body class="bg-dark text-light container d-flex justify-content-center align-items-center min-vh-100 flex-column">
 
-    <header class="mb-4">
-        <img src ="imagenes/logo.png" id="logo">
+    <body class="bg-dark text-light d-flex flex-column align-items-center pt-5">
+    <!--Imagen cabecera de la web-->
+    <header class="container text-center"> <!--text-center para que la imagen salga centrada-->
+        <img src="imagenes/logo.png" alt="Logo" class="img-fluid mx-auto d-block col-sm-8 col-md-6 col-lg-4"><!--los col son para ajustarse a diferentes tamaños de pantalla-->
     </header>
 
-    <!--Clases para alinear el contenido al centro de la pantalla-->
-    
+    <!-- Cuerpo de la web. Formulario + Lista de participantes-->
+    <main class="container">
         <!--Formulario-->
-        <form class="mb-4">
-            <div class="mb-3"><!--m=margin. b=bottom. 3 medida de separación(intermedia)-->
-                <label for="entradaNombre" class="form-label"></label><!--Campo del formulario para escribir-->
-                <input type="text" class="form-control" id="entradaNombre" placeholder="Nombre del posible afortunado">
+        <form class="p-4 col-10 col-sm-8 col-md-6 col-lg-4 mx-auto"><!--los col son para ajustarse a diferentes tamaños de pantalla-->
+            <div class="mb-4"><!--mb es el margen inferior-->
+                <input type="text" class="form-control" id="entradaNombre" placeholder="Nombre del/la posible afortunad@">
             </div>
-
-            <button type="button" class="btn btn-primary" id = "botonGuardar">Guardar</button><!--Botón para guardar el nombre en el array-->
-            <button type="button" class="btn btn-danger" id = "botonBorrar">Borrar</button><!--Botón para borrar el nombre del array-->
-            <button type="button" class="btn btn-warning" id = "botonBorrarTodo">Borrar todo</button> <!--Botón para borrar todos los elementos del array-->
-            
-            <div class="mt-3 mx-auto">
-                <button type="button" class="btn btn-success" id = "botonSorteo">¡SORTEO!</button>
+        
+            <!-- Botón Guardar-->
+            <div class="d-flex justify-content-center mb-2"><!--mb es el margen inferior-->
+                <button type="button" class="btn btn-primary w-75" id="botonGuardar">Guardar</button><!--w75 es el ancho que ocupa del elemento padre-->
+            </div>
+            <!-- Botón Borrar -->
+            <div class="d-flex justify-content-center mb-2"><!--mb es el margen inferior-->
+                <button type="button" class="btn btn-danger w-75" id="botonBorrar">Borrar</button><!--w75 es el ancho que ocupa del elemento padre-->
+            </div>
+            <!-- Botón borrarTodo -->
+            <div class="d-flex justify-content-center mb-2"><!--mb es el margen inferior-->
+                <button type="button" class="btn btn-warning w-75" id="botonBorrarTodo">Borrar todo</button><!--w75 es el ancho que ocupa del elemento padre-->
+            </div>
+            <!-- Botón Sorteo -->
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-success w-75" id="botonSorteo">¡SORTEO!</button><!--w75 es el ancho que ocupa del elemento padre-->
             </div>
         </form>
 
-        <h6 id="tituloPosibles">Posibles afortunados:</h6>
+        <h6 id="tituloPosibles" class="mt-5 text-center">Posibles afortunad@s:</h6><!--mt es el margen superior-->
 
-        <div class="mt-3">
+        <div class="mt-3"><!--mt es el margen superior-->
             <ul id="mostrarArray" class="d-flex flex-wrap gap-2 list-unstyled" ></ul><!--list-unstyled para que no salgan los puntos-->
         </div>
-
-    
+    </main>
 
 </body>
 
