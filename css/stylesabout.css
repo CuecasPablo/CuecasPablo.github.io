@@ -1,0 +1,33 @@
+body{
+    color:#c5b1e0 !important;
+}
+
+header{
+    background-color: #4d3273;
+}
+
+button{
+    background-color: darkviolet !important;
+    border-color: black !important;
+    font-weight: bold !important;
+}
+
+#contacto{
+    border: 5px solid #c5b1e0;
+    background-color: #4d3273;
+    border-radius: 10px;
+}
+
+#recursos{
+    border: 5px solid #c5b1e0;
+    background-color: #4d3273;
+    border-radius: 10px;
+}
+
+a{
+    color: orange !important;
+}
+
+a:hover{
+    color: orangered !important;
+}
