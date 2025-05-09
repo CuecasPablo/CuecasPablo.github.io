@@ -1,26 +1,26 @@
 body{
-    color:#c5b1e0 !important;
-}
-
-header{
-    background-color: #4d3273;
+    color:#a5dcee !important;
 }
 
 button{
-    background-color: darkviolet !important;
+    background-color: #0055ff !important;
     border-color: black !important;
     font-weight: bold !important;
 }
 
+button:hover{
+    transform: scale(1.2);
+}
+
 #contacto{
-    border: 5px solid #c5b1e0;
-    background-color: #4d3273;
+    border: 5px solid #a5dcee;
+    background-color: #22429a;
     border-radius: 10px;
 }
 
 #recursos{
-    border: 5px solid #c5b1e0;
-    background-color: #4d3273;
+    border: 5px solid #a5dcee;
+    background-color: #22429a;
     border-radius: 10px;
 }
 
