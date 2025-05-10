@@ -1,33 +1,44 @@
+/*Estilo body*/
 body{
-    color:#a5dcee !important;
+    background-image: url('../imagenes/fondoweb.webp');/*Fondo. Imagen de patrón*/
+    background-repeat: repeat;/*La imagen se repite*/
+    background-size: auto;/*Tamaño original de la imagen*/
+    color:#a5dcee;/*Color del texto en todo el documento*/
+    font-family: Helvetica;/*Tipo de letra*/
 }
 
+/*Estilo botón*/
 button{
-    background-color: #0055ff !important;
-    border-color: black !important;
-    font-weight: bold !important;
+    background-color: #0055ff;/*Color de fondo*/
+    border-color: black;/*Color del borde*/
+    font-weight: bold;/*La letra es negrita*/
 }
 
+/*Estilo al pasar el ratón por encima*/
 button:hover{
-    transform: scale(1.2);
+    transform: scale(1.2);/*Hace el botón más grande*/
 }
 
+/*Estilo formulario de contacto*/
 #contacto{
-    border: 5px solid #a5dcee;
-    background-color: #22429a;
-    border-radius: 10px;
+    border: 5px solid #a5dcee;/*color del borde*/
+    background-color: #22429a;/*Color de fondo*/
+    border-radius: 10px;/*Suavizado en las esquinas*/
 }
 
+/*Estilo zona con enlaces*/
 #recursos{
-    border: 5px solid #a5dcee;
-    background-color: #22429a;
-    border-radius: 10px;
+    border: 5px solid #a5dcee;/*color del borde*/
+    background-color: #22429a;/*Color de fondo*/
+    border-radius: 10px;/*Suavizado en las esquinas*/
 }
 
+/*Estilo enlaces*/
 a{
-    color: orange !important;
+    color: orange;/*Color de letra de los enlaces*/
+    font-family: "Comic Sans MS";/*Tipo de letra*/
 }
-
+/*Estilo enlaces al pasar el ratón por encima*/
 a:hover{
-    color: orangered !important;
+    color: orangered;/*Color de letra de los enlaces*/
 }

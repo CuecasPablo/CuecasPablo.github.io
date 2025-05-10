@@ -1,42 +1,74 @@
+/*Estilo body*/
+body {
+  background-image: url("../imagenes/fondoweb.webp");/*Fondo. Imagen de patrón*/
+  background-repeat: repeat;/*La imagen se repite*/
+  background-size: auto;/*Tamaño original de la imagen*/
+  font-family: Chewy;/*Tipo de letra*/
+}
 
+/*Estilo formulario*/
 form{
-    border: 5px solid #c5b1e0;
-    background-color: #4d3273;
-    border-radius: 25px;
+    border: 5px solid #c5b1e0;/*color borde*/
+    background-color: #4d3273;/*color de fondo*/
+    border-radius: 25px;/*suavizado del borde*/
 }
 
+/*Estilo campo de entrada*/
 input{
-    text-align: center;
+    text-align: center;/*Pone el texto del placeholder en el centro*/
 }
 
+/*Estilo de los botones al pasar por encima con el ratón.*/
 button:hover{
-    transform: scale(1.1);
-    font-weight: bold;
+    transform: scale(1.1);/*Se hace más grande*/
+    font-weight: bold;/*letra en negrita*/
 }
 
+/*Estilo botón sorteo al pasar por encima con el ratón*/
 #botonSorteo:hover{
-    color:black;
-    font-weight: bolder;
-    transform: scale(1.2);
-    background-image: url('../imagenes/fondobotonsorteo.gif');
+    color:black;/*color de letra*/
+    font-weight: bolder;/*negrita*/
+    transform: scale(1.2);/*tamaño*/
+    background-image: url('../imagenes/fondobotonsorteo.gif');/*fondo animado*/
 }
 
+/*Estilo botón sorteo al seleccionarlo con el tabulador*/
+#botonSorteo:focus-visible{
+    color:black;/*color de letra*/
+    font-weight: bolder;/*negrita*/
+    transform: scale(1.2);/*tamaño*/
+    background-image: url('../imagenes/fondobotonsorteo.gif');/*fondo animado*/
+}
+
+/*Estilo botón guardar al pasar por encima con el ratón o seleccionar con tabulador*/
 #botonGuardar:hover{
-    background-image: url('../imagenes/fondobotonguardar.gif');
+    background-image: url('../imagenes/fondobotonguardar.gif');/*fondo animado*/
 }
 
+#botonGuardar:focus-visible{
+    background-image: url('../imagenes/fondobotonguardar.gif');/*fondo animado*/
+}
+
+/*Estilo botón borrar al pasar por encima con el ratón o seleccionar con tabulador*/
 #botonBorrar:hover{
-    background-image: url('../imagenes/fondobotonborrar.gif');
+    background-image: url('../imagenes/fondobotonborrar.gif');/*fondo animado*/
 }
 
+#botonBorrar:focus-visible{
+    background-image: url('../imagenes/fondobotonborrar.gif');/*fondo animado*/
+}
+
+/*Estilo botón borrar todo al pasar por encima con el ratón o seleccionar con tabulador*/
 #botonBorrarTodo:hover{
-    background-image: url('../imagenes/fondobotonborrartodo.gif');
+    background-image: url('../imagenes/fondobotonborrartodo.gif');/*fondo animado*/
 }
 
+#botonBorrarTodo:focus-visible{
+    background-image: url('../imagenes/fondobotonborrartodo.gif');/*fondo animado*/
+}
+
+/*Estilo título*/
 #tituloPosibles{
-    text-align: center;
-    font-size: xx-large;
-    font-family:Arial, Helvetica, sans-serif;
-    color: #c5b1e0;
-    
+    font-size: xx-large;/*tamaño de letra*/
+    color: #c5b1e0; /*color*/
 }
