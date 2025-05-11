@@ -3,7 +3,7 @@ body {
   background-image: url("../imagenes/fondoweb.webp");/*Fondo. Imagen de patrón*/
   background-repeat: repeat;/*La imagen se repite*/
   background-size: auto;/*Tamaño original de la imagen*/
-  font-family: Chewy;/*Tipo de letra*/
+  font-family: "Chewy";/*Tipo de letra*/
 }
 
 /*Estilo formulario*/
